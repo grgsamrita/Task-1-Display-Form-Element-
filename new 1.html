@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<h1> Simple Form </h1>
+<script>
+function display()
+{
+var x = document.getElementById('fname').value;
+var y = document.getElementById('lname').value;
+alert("Your first Name is "+x);
+}
+</script>
+<body>
+<form>
+<label>First Name</label><input type = "text" id="fname" >
+<label>Last Name</label><input type = "text" name="Last Name" id="lname" >
+<label>Email</label><input type = "email" name="Email" >
+<label>Password</label><input type = "password" name="Password" >
+<div>
+<input type = "radio" name="Gender" ><label>Male</label>
+<input type = "radio" name="Gender" > <label>Female</label>
+</div>
+<div>
+<input type="submit" value="submit" onclick="display()">
+</div>
+</form>
+</body>
+</html>
